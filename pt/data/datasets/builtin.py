@@ -121,10 +121,14 @@ def register_all_pascal_voc(root):
     SPLITS = [
         ("VOC2007_citytrain", 'data/VOC2007_citytrain', "train", 8),
         ("VOC2007_foggytrain", 'data/VOC2007_foggytrain', "train", 8),
+        ("VOC2007_foggytrain_plus", 'data/VOC2007_foggytrain', "train_plus", 8), # 加上長尾類別truck, train, motorcycle
+        ("VOC2007_foggytrain_all", 'data/VOC2007_foggytrain', "train_all", 8), # 加上所有類別
         ("VOC2007_foggyval", 'data/VOC2007_foggyval', "val", 8),
         ("VOC2007_citytrain1", 'data/VOC2007_citytrain1', "train", 1),
         ("VOC2007_cityval1", 'data/VOC2007_cityval1', "val", 1),
         ("VOC2007_bddtrain", 'data/VOC2007_bddtrain', "train", 8),
+        ("VOC2007_bddtrain_plus", 'data/VOC2007_bddtrain', "train_plus", 8), # 加上長尾類別truck, train, motorcycle
+        ("VOC2007_bddtrain_all", 'data/VOC2007_bddtrain', "train_all", 8), # 加上所有類別
         ("VOC2007_bddval", 'data/VOC2007_bddval', "val", 8),
         ("VOC2007_kitti1", 'data/kitti', "train", 1),
         ("VOC2007_sim1", 'data/sim', "train", 1),
